@@ -1,13 +1,13 @@
 name: System information Actions
 on: 
  push:
-   branches: [main]
+   branches: [ main ]
 jobs:
   Sysinfo-workflow-Actions:
     runs-on: ubuntu-latest
     strategy: 
       matrix: 
-        node-version: [16.13.2]
+        node-version: [18.10.0]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
