@@ -1,0 +1,20 @@
+name: System information Actions
+on: 
+ push:
+   branches: [main]
+jobs:
+  Sysinfo-workflow-Actions:
+    runs-on: ubuntu-latest
+    strategy: 
+      matrix: 
+        node-version: [18.10.0]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+      - run: npm run test
