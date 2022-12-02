@@ -45,6 +45,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "node": "^19.1.0",
     "systeminformation": "^5.12.14"
   }
 }
