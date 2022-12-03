@@ -27,7 +27,7 @@ Promise.all([
         result.push(data);
     })])
     .then((result)=>{
-        console.log(result);
+        //console.log(result);
     });
 
     const hostname = 'localhost';

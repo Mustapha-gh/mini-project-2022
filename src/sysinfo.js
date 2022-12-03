@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-//import * as si from 'systeminformation';
 var si = require('systeminformation');
 var result = [];
 Promise.all([
@@ -30,7 +29,7 @@ Promise.all([
     })
 ])
     .then(function (result) {
-    console.log(result);
+    //console.log(result);
 });
 var hostname = 'localhost';
 var port = 8000;
