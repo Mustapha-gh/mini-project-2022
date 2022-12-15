@@ -1,9 +1,9 @@
-name: System information Actions
+name: system information actions
 on: 
  push:
    branches: [ main ]
 jobs:
-  Sysinfo-workflow-Actions:
+  sysinfo-workflow-actions:
     runs-on: ubuntu-latest
     strategy: 
       matrix: 
